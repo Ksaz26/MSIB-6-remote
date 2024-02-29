@@ -1,0 +1,57 @@
+*{ /* ini contoh universal memungkinkan semua tag yang ada di html terpengaruh dengan css ini */
+ box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header  {
+    background-image: url(../IMG/39060.jpg);
+    background-repeat: no-repeat;
+    background-position: unset;
+    padding: 20px;
+    text-align: center;
+    color: crimson;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: lightblue;
+    justify-content: center;
+    display: flex;
+}
+.navbar a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: aliceblue;
+    color: crimson;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 25%;
+}
+.column.middle{
+    width: 50%;
+}
+
+.row:after{
+    content: "";
+    display: block;
+    clear: both; /* membersihkan float left sebelumnya */
+}
+
+.footer {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
